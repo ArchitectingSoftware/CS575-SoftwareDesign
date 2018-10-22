@@ -1,39 +1,32 @@
 
-# Use a Kubnernetes Based Container as Runtime
+# Performing the Mining Calculation
 
 |Category    | Value    |
 |------------|----------|
 | Identifier | adr-0001 |
-| Status     | Accepted |
+| Status     | Superseded by [0002](./0002-Platform-Containers.md) |
 | Author(s)  | Brian Mitchell |
 | Date:      | October 21, 2017 |
 
-**keywords:** Runtime, Deployment, Kubernetes, Container, Docker  
+**keywords:** Runtime, Deployment, Web Services
 
 
 ## Context and Problem Statement
 
-We would like to have this project be used as a demo to showcase some of the interesting blockchain capabilities.  In the real world, consensus-based algorithms are very computationally intensive, and we wanted to simulate creating an architecture that would be suitable and scalable for this type of application.  Best practice dictates the use of a cloud native architecture and a container-based runtime orchestrator. 
-
-Kubernetes (K8s) was chosen as the container solution because it is very popular, supports  development via [Minikube](https://github.com/kubernetes/minikube/), and can be deployed to all major cloud providers (AWS, GCF, Azure)
+We would like to have this project be used as a demo to showcase some of the interesting blockchain capabilities.  In the real world, consensus-based algorithms are very computationally intensive, and we wanted to simulate creating an architecture that would be suitable and scalable for this type of application.  In order to achieve these objectives the mining operation will be externalized in a REST-based web service
 
 ## Considered Options
 
-* [Kubernetes](https://kubernetes.io/) - Open Source 
-* [Amazon EKS](https://aws.amazon.com/eks/) - Amazon's Managed Kubernetes Service
-* [Amazon Fargate](https://aws.amazon.com/fargate/) - Amazon's General Purpose Container Solution
-* [Amazon's ECS](https://aws.amazon.com/ecs/) - Amazon Elastic Container Service
-* Other cloud based container and Kubernetes hosted services were not considered because of expertise on the Amazon platform
+* Web Service - Externalize computation into an external web service 
+* Internal Solver - build the solver in the client application - this might be complex because browsers are single threaded
+* Build the internal solver, and an option for communicating with an external web service
 
 ## Decision Outcome
 
-Chosen option: **"Amazon EKS"**, because
+Chosen option: **"Build both solvers"**, because
 
-* Development can be done local with MiniKube
-* Deployment to AWS via ECS is simple and can be fully automated
-* World class Amazon support and proven scale
-* Cost effective
+* Users could use the solution without setting up and configuring an external web service, but can also create an external service for enhanced performance.
 
-The positioning of the kubernetes runtime is shown in this architecture container diagram:
+This is shown below:
 
-![Architecure Context](../assets/doc/arch/BC-Architecture-Container.png)
+![Architecure Context](../assets/doc/arch/BC-Architecture-Runtime.png)
