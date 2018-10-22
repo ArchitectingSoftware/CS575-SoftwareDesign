@@ -1,0 +1,22 @@
+@startuml "BC-Architecture-Runtime"
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_TOP_DOWN
+'LAYOUT_AS_SKETCH
+'LAYOUT_WITH_LEGEND
+
+Person(admin, "User")
+    package "Blockchain Simulator" <<boundary>> as c1 {
+        hide stereotype
+
+        Container(wa, "WebApp", "Angular", "Allows users to understand basic Blockchain Operators")
+
+        Container(wa_miner, "Embedded Miner", "Typescript", "Uses Observables in the client to mine blocks")
+
+        Container(scala_ws, "Miner Service", "Scala", "Uses Akka/Http to mine blocks")
+
+        Rel_L(wa, wa_miner,"typescript angular service")
+        Rel_R(wa, scala_ws,"typescript angular service")
+    }
+Rel(admin, wa, "Uses", "HTTPS")
+@enduml
