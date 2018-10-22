@@ -1,0 +1,12 @@
+
+@startuml "BC-Architecture-Context"
+!include "doc/lib/C4_Container.puml"
+'!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+
+Person(admin, "User")
+package "Container Runtime" <<boundary>> as c1 {
+    Container(web_app, "Blockchain Simulator", "Angular", "Allows users to understand basic Blockchain Operators")
+}
+
+Rel(admin, web_app, "Uses", "HTTPS")
+@enduml

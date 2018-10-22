@@ -1,0 +1,39 @@
+@startuml "BC-Architecture-Container"
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_TOP_DOWN
+'LAYOUT_AS_SKETCH
+'LAYOUT_WITH_LEGEND
+
+Person(admin, "User")
+package "Container Runtime" <<boundary>> as c1 {
+    package "Blockchain Simulator" <<boundary>> as c2 {
+        hide stereotype
+
+        Container(wa, "WebApp", "Angular", "Allows users to understand basic Blockchain Operators")
+
+        Container(wa_miner, "Embeded Miner", "Typescript", "Uses Observables in the client to mine blocks")
+
+        Container(wa_cli, "Miner Client", "Typescript", "Uses Observables in the client to mine blocks")
+
+        Container(go_miner, "GoLang Miner", "GoLang", "Uses GinGonic framework [[https://gin-gonic.github.io/gin/ link]]")
+
+        Container(kotlin_miner, "Kotlin Miner", "Typescript", "Uses Observables in the client to mine blocks")
+
+        Container(node_miner, "Node Miner", "Typescript", "Uses Observables in the client to mine blocks")
+
+        Container(scala_miner, "Scala Miner", "Typescript", "Uses Observables in the client to mine blocks")
+
+        Rel_L(wa, wa_miner,"typescript angular service")
+        Rel_R(wa, wa_cli,"typescript angular service")
+
+        Rel(wa_cli,go_miner,"HTTP")
+        Rel(wa_cli,kotlin_miner,"HTTP")
+        Rel(wa_cli,node_miner,"HTTP")
+        Rel(wa_cli,scala_miner,"HTTP")
+    }
+}
+
+Rel(admin, wa, "Uses", "HTTPS")
+@enduml
+
