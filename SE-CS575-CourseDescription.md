@@ -27,7 +27,7 @@ The course will not use a textbook - lectures will be formulated from material d
 
 ### Course Structure
 
-This is an 11 week graduate course, weekly lectures will be provided via my GitHub site [@ArchitectingSoftware](https://github.com/ArchitecgtingSoftware). Course assignments and deliverables will be managed on [Drexel's Learn Blackboard](https://learn.dcollege.net) site.  In addition to the course lectures, student participation and deliverables will include:
+This is an 11 week graduate course, weekly lectures will be provided via my GitHub site [@ArchitectingSoftware](https://github.com/ArchitectingSoftware). Course assignments and deliverables will be managed on [Drexel's Learn Blackboard](https://learn.dcollege.net) site.  In addition to the course lectures, student participation and deliverables will include:
 
 1. Independent review of research papers that will be posted on the class internal discussion board,  I will be selecting 5-6 papers that range in publication date from 1972 to 2018.
 2. NEW in 2018 - Feedback to the speaker.  I will be selecting several YouTube accessible videos from some of my favorite speakers and ask students to create a short writeup critiquing the talk.  The student will be expected to integrate learnings in the class with the talk to structure a virtual feedback email.
@@ -52,7 +52,7 @@ In order to be successful in this course:
 Student final grades will be derived by the approximate scale:
 
 | Course Component | Approximate Weight |
-| ---------------- | -----------------: |
+| :--------------- | -----------------: |
 | Discussion Group Assignments, and Research Paper Reviews | 35%|
 | Assignments based on YouTube videos | 15% |
 |Midterm Assignment | 15% |
