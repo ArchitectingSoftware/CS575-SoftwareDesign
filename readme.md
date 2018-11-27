@@ -9,4 +9,4 @@ content and suggestions to improve the course.
 
 Pull requests are welcome!
 
-Link to --> [Latest Course Syllabus](CS575-CourseDescription.md)
+Link to --> [Latest Course Syllabus](SE-CS575-CourseDescription.md)
