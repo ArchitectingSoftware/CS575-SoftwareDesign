@@ -61,4 +61,4 @@ Student final grades will be derived by the approximate scale:
 Note that all course deliverables will be submitted via the course Blackboard site and not email. 
 
 ***
-###### Last updated: October 2018
+###### Last updated: September 2019
