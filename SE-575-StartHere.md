@@ -2,13 +2,13 @@
 
 **INSTRUCTOR**: Dr. Brian Mitchell - [twitter](https://twitter.com/DrBrianMitchell) 
 
-**TA**: Edwin Dauber
+**TA**: Tri Le
 ###### Note you can get our direct email via the course blackboard site, not posting here to avoid spam-bots
 
 ### STEP 1 - SETUP Course Collaboration and Communication
 This course often has a large number of students, making communication between students and the teaching team really difficult.  Starting in 2019, I am moving away from email towards using Slack.  If you email me or the course TA responses will likely be delayed, faster response will be over Slack.
 
-To register for our course slack space please go to [https://join.slack.com/t/drexel-se575-2019/signup](https://join.slack.com/t/drexel-se575-2019/signup).  Note that I setup this space to only allow signup by individuals with a valid `drexel.edu` email address.  **You must use your drexel email address to join this slack space, personal email addresses will not work**.  
+To register for our course slack space please go to [https://join.slack.com/t/drexel-se575-2020/signup](https://join.slack.com/t/drexel-se575-2020/signup).  Note that I setup this space to only allow signup by individuals with a valid `drexel.edu` email address.  **You must use your drexel email address to join this slack space, personal email addresses will not work**.  
 
 Once you join our slack space you can connect to it and use from a web browser (computer or mobile).  You can also download a desktop application for Mac or Windows via the `Resources->Download` menu on the slack website.  There are also really good native mobile apps for iOS and Android that you can install on your phone or tablet.
 
