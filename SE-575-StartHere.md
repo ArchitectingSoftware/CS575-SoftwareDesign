@@ -17,7 +17,7 @@ Once you join our slack space you can connect to it and use from a web browser (
 
 
 ### STEP 2 - Are you REALLY ready for SE575
-This is a graduate level course, and successful students need some foundational background in computer science and software engineering prior to taking this course.
+This is a graduate level course, and successful students need some foundational background in computer science and software engineering prior to taking this course.  If you are comfortable with the basics of software design and can create (code, compile, deploy) simple applications you should be OK, we will be starting from here, not reviewing any of these things.
 
 Please read the below set of requirements carefully and ask yourself "Am I Ready?".  Every year I have students who struggle because they don't take the course prerequisites seriously.  Ill repeat them below from the course syllabus:
 
